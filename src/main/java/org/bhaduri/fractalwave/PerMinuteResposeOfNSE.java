@@ -64,7 +64,7 @@ public class PerMinuteResposeOfNSE {
         LocalTime currentTime = LocalTime.parse(strResult);
 
         LocalTime endTime = LocalTime.parse("15:30:00"); //Hour-1:24, min, sec
-//        LocalTime endTime = LocalTime.parse("18:31:00"); //Hour-1:24, min, sec
+//        LocalTime endTime = LocalTime.parse("23:15:00"); //Hour-1:24, min, sec
 
         int flag = 0;
 
