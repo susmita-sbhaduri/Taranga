@@ -85,6 +85,7 @@ public class PerMinuteResposeOfNSE {
             currentTime = LocalTime.parse(strResult);
         }
         int count = 0;
+        int count_null = 0;
         
         while (flag == 1) {
 //            while (count < 1) {
@@ -186,8 +187,10 @@ public class PerMinuteResposeOfNSE {
 //                        System.out.println("last update" + scripData.getLastUpdateTime());
                     }
                     //                System.out.println(n50Resp);
-                } else {
+                } else {                 
+                    count_null = count_null+1;
                     System.out.println("Value of dataArrayCount" + dataArrayCount);
+                    System.out.println("count null "+count_null);
                 }
             }
             try {
