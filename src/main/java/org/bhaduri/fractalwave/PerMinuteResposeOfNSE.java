@@ -194,7 +194,8 @@ public class PerMinuteResposeOfNSE {
                 }
             }
             try {
-                Thread.sleep(3 * 1000); //seconds * mulliseconds
+//                Thread.sleep(3 * 1000); //seconds * mulliseconds
+                Thread.sleep(8 * 1000); //seconds * mulliseconds
             } catch (InterruptedException ex) {
                 System.out.println("InterruptedException with entity"+entity);
 //                Logger.getLogger(PerMinuteResposeOfNSE.class.getName()).log(Level.SEVERE, null, ex);
