@@ -57,7 +57,7 @@ public class PerMinuteResposeOfNSE {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //date update for scheduling
 
-        LocalTime startTime = LocalTime.parse("09:20:00"); //Hour-1:24, min, sec       
+        LocalTime startTime = LocalTime.parse("09:15:00"); //Hour-1:24, min, sec       
 
         SimpleDateFormat formatCurrent = new SimpleDateFormat("HH:mm:ss");
         String strResult = formatCurrent.format(new Date());
@@ -195,7 +195,7 @@ public class PerMinuteResposeOfNSE {
             }
             try {
 //                Thread.sleep(3 * 1000); //seconds * mulliseconds
-                Thread.sleep(8 * 1000); //seconds * mulliseconds
+                Thread.sleep(11 * 1000); //seconds * mulliseconds
             } catch (InterruptedException ex) {
                 System.out.println("InterruptedException with entity"+entity);
 //                Logger.getLogger(PerMinuteResposeOfNSE.class.getName()).log(Level.SEVERE, null, ex);
