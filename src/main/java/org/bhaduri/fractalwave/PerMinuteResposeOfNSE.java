@@ -57,14 +57,15 @@ public class PerMinuteResposeOfNSE {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //date update for scheduling
 
-        LocalTime startTime = LocalTime.parse("09:15:00"); //Hour-1:24, min, sec       
+        LocalTime startTime = LocalTime.parse("09:15:00"); //Hour-1:24, min, sec    
+//        LocalTime startTime = LocalTime.parse("18:15:00"); //muhurat trading start 4/11/21
 
         SimpleDateFormat formatCurrent = new SimpleDateFormat("HH:mm:ss");
         String strResult = formatCurrent.format(new Date());
         LocalTime currentTime = LocalTime.parse(strResult);
 
         LocalTime endTime = LocalTime.parse("15:30:00"); //Hour-1:24, min, sec
-//        LocalTime endTime = LocalTime.parse("23:15:00"); //Hour-1:24, min, sec
+//        LocalTime endTime = LocalTime.parse("19:15:00"); //muhurat trading end 4/11/21
 
         int flag = 0;
 
